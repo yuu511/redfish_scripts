@@ -4,14 +4,23 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+append_to_url	redfish_commonlib.py	/^def append_to_url(IP,redfish_path):$/;"	f
 create_session	establish_redfish.py	/^def create_session(IP,credentials_blob):$/;"	f
-default_dirs_init	establish_redfish.py	/^def default_dirs_init(directory):$/;"	f
-get_file_dir	establish_redfish.py	/^def get_file_dir():$/;"	f
-initialize_and_create_session	establish_redfish.py	/^def initialize_and_create_session(IP):$/;"	f
-load_config_defaults	establish_redfish.py	/^def load_config_defaults(config_parser,config_path):$/;"	f
-load_credentials_if_exist	establish_redfish.py	/^def load_credentials_if_exist(opts):$/;"	f
-look_for_config_file	establish_redfish.py	/^def look_for_config_file(directory):$/;"	f
-main	establish_redfish.py	/^def main(argv):$/;"	f
-mkdir_if_empty	establish_redfish.py	/^def mkdir_if_empty(basedir,subdir):$/;"	f
-prompt_username_password	establish_redfish.py	/^def prompt_username_password():$/;"	f
-verify_ini_opts	establish_redfish.py	/^def verify_ini_opts(config_parser,config_path):$/;"	f
+default_dirs_init	redfish_frontend.py	/^def default_dirs_init(directory):$/;"	f
+expired	redfish_commonlib.py	/^def expired(redfish_instance):$/;"	f
+extract_xauth_token	redfish_commonlib.py	/^def extract_xauth_token(redfish_instance):$/;"	f
+get_file_dir	redfish_frontend.py	/^def get_file_dir():$/;"	f
+get_settings	ini_parser.py	/^def get_settings(config_path):$/;"	f
+initialize_and_create_session	establish_redfish.py	/^def initialize_and_create_session(IP,config_settings):$/;"	f
+load_credentials	ini_parser.py	/^def load_credentials(config):$/;"	f
+load_default_settings	ini_parser.py	/^def load_default_settings(config_parser,config_path):$/;"	f
+load_file_settings	ini_parser.py	/^def load_file_settings(config_parser,config_path):$/;"	f
+main	cli_client.py	/^def main(IP): $/;"	f
+mkdir_if_empty	redfish_frontend.py	/^def mkdir_if_empty(basedir,subdir):$/;"	f
+power_on_system	redfish_frontend.py	/^def power_on_system(redfish_instance):$/;"	f
+power_switch	redfish_power.py	/^def power_switch(redfish_instance,payload):$/;"	f
+poweroff	redfish_power.py	/^def poweroff(redfish_instance):$/;"	f
+poweron	redfish_power.py	/^def poweron(redfish_instance):$/;"	f
+prompt_username_password	ini_parser.py	/^def prompt_username_password():$/;"	f
+renew_if_expired	redfish_commonlib.py	/^def renew_if_expired(redfish_instance):$/;"	f
+start_instance	redfish_frontend.py	/^def start_instance(IP):$/;"	f
